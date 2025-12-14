@@ -2,22 +2,8 @@ body { font-family: system-ui, Arial, sans-serif; background:#f6f7fb; margin:0; 
 .wrap { max-width: 720px; margin: 32px auto; padding: 0 16px; }
 h1 { margin: 0 0 6px; }
 .sub { margin: 0 0 18px; color: #444; }
-
 .card { background: white; border-radius: 14px; padding: 16px; margin: 14px 0; box-shadow: 0 8px 20px rgba(0,0,0,.06); }
-
-label { display:block; margin: 10px 0; font-weight: 600; }
-input { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ddd; border-radius: 10px; font-weight: 500; }
-
-.row { display:flex; gap: 12px; }
-.row label { flex: 1; }
-
-button { padding: 10px 12px; border: 0; border-radius: 10px; font-weight: 700; cursor:pointer; }
-button:hover { opacity: .92; }
-
-.msg { margin-top: 10px; font-weight: 600; }
-.msg.ok { color: #0a7a2a; }
-.msg.err { color: #b00020; }
-
 .lbHeader { display:flex; justify-content: space-between; align-items: center; gap: 12px; }
+button { padding: 10px 12px; border: 0; border-radius: 10px; font-weight: 700; cursor:pointer; }
 table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 th, td { text-align:left; padding: 10px; border-bottom: 1px solid #eee; }
