@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mile Monday</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>🏃 Mile Monday</h1>
+    <p class="sub">Enter a mile time. Leaderboard updates automatically.</p>
+
+    <section class="card">
+      <h2>Add time</h2>
+      <form id="timeForm">
+        <label>
+          Name
+          <input id="name" required placeholder="Jeffrey Eng" />
+        </label>
+
+        <div class="row">
+          <label>
+            Minutes
+            <input id="min" type="number" min="0" required placeholder="5" />
+          </label>
+          <label>
+            Seconds
+            <input id="sec" type="number" min="0" max="59" required placeholder="45" />
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+        <div id="msg" class="msg"></div>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="lbHeader">
+        <h2>Leaderboard (best time)</h2>
+        <button id="refreshBtn" type="button">Refresh</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Time</th></tr>
+        </thead>
+        <tbody id="leaderboard"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
