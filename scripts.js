@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbyzxQRfeu0mxwlHomD8h80Zjo-cFn8yZDPhzJrrfs04Ws12ByaFCxyWDZd7_lJbNS8wDw/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbyL-8hKSx2QflbkvnfzwghIX8mMvUgSN0Vl0yqYNva-WfZZimSRGG9GdhRFQLtnZl83iw/exec";
 
 const tbody = document.getElementById("leaderboard");
 const refreshBtn = document.getElementById("refreshBtn");
@@ -11,6 +11,7 @@ function formatTime(totalSeconds) {
 
 async function loadLeaderboard() {
   tbody.innerHTML = `<tr><td colspan="3">Loading...</td></tr>`;
+
   const res = await fetch(API_URL);
   const data = await res.json();
 
@@ -29,9 +30,5 @@ async function loadLeaderboard() {
   `).join("");
 }
 
-
-
 refreshBtn.addEventListener("click", loadLeaderboard);
-
-// initial load
 loadLeaderboard();
